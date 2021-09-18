@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootswatch/dist/minty/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@mdi/font/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>CV - Camille Mathien</title>
+  </head>
+  <body>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-light
+        bordered-container
+        mx-auto
+        my-auto
+      "
+    >
+      <div class="container-fluid">
+        <div class="d-flex flex-column ms-3 me-5">
+          <h1
+            class="
+              display-5
+              police-titres
+              text-uppercase
+              animate__animated animate__slideInLeft
+            "
+          >
+            Camille Mathien
+          </h1>
+          <p class="lead header-subtitle">
+            <strong> Portfolio</strong>
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php"
+                ><strong>Retour au CV</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio1.html">E-mail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio2.html">Mot de passe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio3.html">Juste Prix</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio4.html">Pendu</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="portfolio5.html"
+                >Mastermind</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio6.html">Monnaie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mastermind -->
+    <div class="container-fluid my-5">
+      <header class="text-center m-1 px-5">
+        <h1>Mastermind</h1>
+        <p class="lead">
+          Vous devez deviner la combinaison de billes choisie par
+          l'ordinateur.<br />Si la bille est entourée en vert, elle est bien
+          placée. Si sa bordure est orange, elle est au mauvais endroit.
+        </p>
+      </header>
+
+      <div class="container gameboard my-2">
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <select
+                class="col-1 mx-2 bille formulaire"
+                aria-label="Bille 0"
+                id="bille0"
+              >
+                <option value="0" class="color0" selected>blanc</option>
+                <option value="1" class="color1">noir</option>
+                <option value="2" class="color2">bleu</option>
+                <option value="3" class="color3">rouge</option>
+                <option value="4" class="color4">jaune</option>
+                <option value="5" class="color5">vert</option>
+              </select>
+              <select
+                class="col-1 mx-2 bille formulaire"
+                aria-label="Bille 1"
+                id="bille1"
+              >
+                <option value="0" class="color0" selected>blanc</option>
+                <option value="1" class="color1">noir</option>
+                <option value="2" class="color2">bleu</option>
+                <option value="3" class="color3">rouge</option>
+                <option value="4" class="color4">jaune</option>
+                <option value="5" class="color5">vert</option>
+              </select>
+              <select
+                class="col-1 mx-2 bille formulaire"
+                aria-label="Bille 2"
+                id="bille2"
+              >
+                <option value="0" class="color0" selected>blanc</option>
+                <option value="1" class="color1">noir</option>
+                <option value="2" class="color2">bleu</option>
+                <option value="3" class="color3">rouge</option>
+                <option value="4" class="color4">jaune</option>
+                <option value="5" class="color5">vert</option>
+              </select>
+              <select
+                class="col-1 mx-2 bille formulaire"
+                aria-label="Bille 3"
+                id="bille3"
+              >
+                <option value="0" class="color0" selected>blanc</option>
+                <option value="1" class="color1">noir</option>
+                <option value="2" class="color2">bleu</option>
+                <option value="3" class="color3">rouge</option>
+                <option value="4" class="color4">jaune</option>
+                <option value="5" class="color5">vert</option>
+              </select>
+            </div>
+          </div>
+          <div id="bouton">
+            <input
+              type="button"
+              value="Vérifier la combinaison"
+              class="btn btn-secondary my-3"
+              onclick="verifyColor()"
+            />
+          </div>
+          <p class="lead" id="message"></p>
+        </form>
+        <div id="gameboard"></div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer py-2 text-white background-blue text-center">
+      <small>2021&nbsp;&#8212;&nbsp;Camille Mathien</small>
+    </footer>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/simple-parallax-js/dist/simpleParallax.js"></script>
+  <script src="assets/js/portfolio5.js"></script>
+</html>

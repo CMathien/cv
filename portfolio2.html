@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootswatch/dist/minty/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@mdi/font/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>CV - Camille Mathien</title>
+  </head>
+  <body>
+    <!--Header-->
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-light
+        bordered-container
+        mx-auto
+        my-auto
+      "
+    >
+      <div class="container-fluid">
+        <div class="d-flex flex-column ms-3 me-5">
+          <h1
+            class="
+              display-5
+              police-titres
+              text-uppercase
+              animate__animated animate__slideInLeft
+            "
+          >
+            Camille Mathien
+          </h1>
+          <p class="lead header-subtitle">
+            <strong> Portfolio</strong>
+          </p>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php"
+                ><strong>Retour au CV</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio1.html">E-mail</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="portfolio2.html"
+                >Mot de passe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio3.html">Juste Prix</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio4.html">Pendu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio5.html">Mastermind</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio6.html">Monnaie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Mot de passe -->
+    <div class="container-fluid my-5">
+      <h1 class="display-6 text-center text-uppercase">Mot de passe</h1>
+      <p class="lead text-center">
+        Saisissez un mot de passe. Le champ change de couleur en fonction de la
+        force de votre mot de passe.
+      </p>
+      <div
+        class="container col-6 border border-primary rounded-1 shadow my-3 p-3"
+      >
+        <form>
+          <div class="mb-3">
+            <label for="motDePasse" class="form-label"
+              >Veuillez saisir votre mot de passe :</label
+            >
+            <input
+              type="text"
+              class="form-control fw-bold"
+              id="motDePasse"
+              aria-describedby="mot de passe"
+              required
+            />
+            <button
+              type="reset"
+              class="
+                btn btn-blue
+                my-3
+                m-auto
+                d-flex
+                justify-content-evenly
+                align-items-center
+              "
+            >
+              Réinitialiser
+            </button>
+            <div id="indicationForceMotDePasse"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer py-2 text-white background-blue text-center">
+      <small>2021&nbsp;&#8212;&nbsp;Camille Mathien</small>
+    </footer>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/simple-parallax-js/dist/simpleParallax.js"></script>
+  <script src="assets/js/portfolio2.js"></script>
+</html>
