@@ -627,6 +627,20 @@
               my-4
               shadow
             " role="alert">
+          <i class="mdi mdi-github me-2"></i>
+          <div>
+            <a href="https://github.com/CMathien" target="_blank">CMathien</a>
+          </div>
+        </div>
+        <div class="
+              alert
+              background-blue
+              text-white
+              d-flex
+              align-items-center
+              my-4
+              shadow
+            " role="alert">
           <i class="mdi mdi-file-download me-2"></i>
           <div>
             Télécharger la version PDF de ce CV en cliquant
